@@ -1,0 +1,38 @@
+.tabsContainer {
+  flex-wrap: wrap;
+  flex-grow: 1;
+  max-width: calc(100% - 225px);
+}
+
+.groupButtons {
+  max-width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab,
+.tabInner {
+  display: flex;
+  /*justify-content: space-between;*/
+  align-items: center;
+  /* padding: 1rem; */
+  /* background-color: var(--background-color); */
+  width: 100%;
+  /* max-width: 400px; */
+}
+
+.tabSetting {
+  padding: 1rem;
+  background-color: var(--background-color);
+}
+
+.tabInner {
+  justify-content: space-between;
+  background-color: transparent;
+}

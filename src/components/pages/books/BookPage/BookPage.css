@@ -1,0 +1,137 @@
+.book {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book-info {
+  flex-wrap: wrap;
+  flex-grow: 1;
+  max-width: calc(100% - 280px);
+}
+
+.nav-tabs {
+  white-space: nowrap;
+  border: none;
+}
+
+.nav-tabs .nav-link {
+  color: var(--color-text);
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  /* border-color: transparent; */
+  background-color: transparent;
+  color: var(--color-text);
+
+  border-color: var(--border-color);
+
+  border-bottom: 2px solid var(--border-color) !important;
+  font-weight: 600;
+}
+
+.chapters .chapter {
+  display: block;
+  margin-top: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0px 15px 10px 15px;
+  border-bottom: 1px solid;
+}
+
+img {
+  max-width: 200px;
+  width: 100%;
+}
+
+.book-description {
+  max-height: 100px;
+  white-space: pre-line;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.button-collapse {
+  color: #4949d3;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.section-chapter {
+  border: 1px var(--border-color) solid;
+  padding: 40px;
+}
+
+.section-chapter-name {
+  padding: 10px 0;
+  border-bottom: 2px var(--border-color) solid;
+}
+
+.section-chapter-body {
+  margin-top: 20px;
+}
+
+.reader-arrow {
+  position: fixed;
+  height: 150px;
+  top: 45%;
+  cursor: pointer;
+  display: block;
+  font-size: 100px;
+  opacity: 0.5;
+  -webkit-text-stroke-width: 3.3px;
+}
+
+select {
+  background-color: var(--background-color) !important;
+  color: #666666 !important;
+  padding: 1em;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+}
+
+.star {
+  font-size: 30px; /* Змініть розмір зірки за бажанням */
+  color: #ffd700; /* Колір зірки */
+  cursor: pointer; /* Змінюється на вказівник курсора при наведенні */
+}
+
+.star.selected {
+  color: var(--color-text);
+}
+
+.star.focused,
+.star:focus,
+.star.focused {
+  color: var(--color-text);
+}
+
+@media (max-width: 550px) {
+  .container-small {
+    padding: 0;
+  }
+
+  .book-info {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 877px) {
+  .section-chapter {
+    padding: 10px;
+    border: none;
+  }
+}
+
+@media (max-width: 1076px) {
+  .reader-arrow {
+    display: none;
+  }
+}

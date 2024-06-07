@@ -1,0 +1,145 @@
+.section-chapter {
+  border: 1px var(--border-color) solid;
+  /*padding: 40px;*/
+  padding: 30px;
+}
+
+.section-chapter-name {
+  padding: 10px 0;
+  border-bottom: 2px var(--border-color) solid;
+}
+
+.section-chapter-body {
+  margin-top: 20px;
+  word-break: break-word;
+}
+
+.reader-arrow {
+  position: fixed;
+  height: 150px;
+  top: 45%;
+  cursor: pointer;
+  display: block;
+  font-size: 90px;
+  opacity: 0.5;
+  -webkit-text-stroke-width: 3.3px;
+}
+
+.reader-arrow-mobile {
+  display: none;
+}
+
+.arrow-mobile {
+  width: 25%;
+}
+
+.autohide {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+.autohide-bottom {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  transition: top 0.3s;
+}
+
+.navbar-item {
+  display: flex;
+  align-content: center;
+  font-size: 16px;
+}
+
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.el-title {
+  max-width: calc(100% / 5);
+  cursor: pointer;
+}
+
+.el-title :hover {
+  background: hsla(0, 0%, 100%, 0.08);
+  text-decoration: none;
+  color: #fff;
+}
+
+.chapters .chapter {
+  display: block;
+  margin-top: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0px 15px 10px 15px;
+  border-bottom: 1px solid;
+}
+
+.hide {
+  display: none;
+}
+
+.bookmark:hover i.bi.hide {
+  display: block;
+}
+
+/*i.bi.bi-bookmark {*/
+/*    display: none;*/
+/*}*/
+
+.chapter-nav {
+  background-color: hsl(0deg 3% 15%) !important;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+.bookmark {
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+}
+
+.bookmark_inner {
+}
+
+.fa-bookmark {
+  content: '\f02e';
+}
+
+.fa-bookmark:hover {
+}
+
+/*.bookmark:hover {*/
+/*  max-width: 100%;*/
+/*}*/
+
+@media (max-width: 877px) {
+  .section-chapter {
+    padding: 10px;
+    border: none;
+  }
+}
+
+@media (max-width: 1076px) {
+  .reader-arrow-mobile {
+    display: block;
+  }
+
+  .reader-arrow {
+    display: none;
+  }
+}

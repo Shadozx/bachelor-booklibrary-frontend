@@ -1,0 +1,127 @@
+body {
+  --background-color-body: #f2f2f3;
+
+  --border-color: #dcdcdc;
+
+  --color-text: black;
+  --background-color: white;
+  --background-color-inner: #d9d8d8;
+
+  --color-text-button: #a2a2a3;
+  --background-color-button: rgba(0, 0, 0, 0.05);
+  --nav-color: white;
+
+  --border-radius: 14px;
+
+  background-color: var(--background-color-body) !important;
+  color: var(--color-text) !important;
+}
+
+.dark-theme {
+  --color-text: #a2a2a3;
+
+  --border-color: #3b3d45;
+
+  --background-color-body: rgb(26, 26, 26);
+  --background-color: hsl(0deg 1% 20% / 25%);
+  --nav-color: #252527;
+  /*rgb(42 42 42);*/
+  --background-color-inner: hsl(0deg 3% 15%);
+
+  --background-color-button: #484747;
+}
+
+.color-text {
+  color: var(--color-text) !important;
+}
+.background-color {
+  background-color: var(--background-color) !important;
+}
+
+.background-color-body {
+  background-color: var(--background-color-body) !important;
+}
+
+.background-color-inner {
+  background-color: var(--background-color-inner) !important;
+}
+.border-color {
+  border-color: var(--border-color) !important;
+}
+
+.border-radius {
+  border-radius: var(--border-radius) !important;
+}
+
+.rounded-top {
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+.rounded-bottom {
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.container-small {
+  max-width: 1000px !important;
+}
+
+.btn-button {
+  background-color: var(--background-color-button) !important;
+  color: var(--color-text-button) !important;
+  color: var(--color-text) !important;
+  font-size: 1rem !important;
+}
+
+/* a {
+  text-decoration: none !important;
+  color: var(--color-text) !important;
+} */
+
+.nav-a {
+  display: block;
+  margin-top: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0px 15px 10px 15px;
+  border-bottom: 1px solid;
+}
+
+.navigation {
+  background-color: var(--nav-color) !important;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 2px 3px;
+}
+
+.elem-link,
+.navigation-elem {
+  background-color: transparent !important;
+  /* color: var(--color-text-button) !important; */
+  text-decoration: none !important;
+  color: var(--color-text) !important;
+}
+
+textarea,
+input {
+  background-color: transparent;
+  border: 1px solid var(--border-color) !important;
+}
+
+.formlementIsEmpty {
+  border: 1px solid red !important;
+}
+
+#button-mobile {
+  display: none;
+}
+
+#switcher-theme {
+  cursor: pointer;
+}
+
+.btn-close {
+  opacity: 1;
+}
+@media (max-width: 990px) {
+  #button-mobile {
+    display: block;
+  }
+}

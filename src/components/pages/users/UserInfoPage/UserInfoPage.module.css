@@ -1,0 +1,207 @@
+.navTabs {
+  border: none;
+}
+
+.navTabs .navLink {
+  color: #495057;
+  border: none !important;
+}
+
+.navTabs .navLink.active {
+  color: var(--color-text) !important;
+  background-color: transparent !important;
+  font-weight: 600;
+  border: none !important;
+  border-bottom: 2px solid;
+}
+.avatar {
+  max-width: 80px !important;
+  border-radius: 8px;
+}
+.userInfo {
+  /* border-bottom: 1px solid #a2a2a3; */
+  border-radius: 14px 14px 0 0;
+  background-color: var(--background-color);
+}
+
+.navTabsHorizontal {
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  overflow-y: hidden;
+  scrollbar-width: none; /* Встановлення ширини скролбара на нуль */
+  -ms-overflow-style: none; /* Відключення стандартного стилю скролбара для Edge та IE */
+
+  white-space: nowrap;
+
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.navTabsHorizontal::-webkit-scrollbar {
+  display: none; /* Приховування скролбара для WebKit браузерів */
+}
+
+.navTabsVertical {
+  display: flex;
+
+  align-items: center;
+  white-space: nowrap;
+  flex-direction: column;
+
+  width: 175px;
+}
+
+.navTabsVertical .navLink {
+  color: #495057;
+  border: none !important;
+}
+
+.tabsContainer {
+  flex-wrap: wrap;
+  flex-grow: 1;
+  max-width: calc(100% - 225px);
+}
+
+.groupButtons {
+  max-width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab,
+.tabInner {
+  display: flex;
+  /*justify-content: space-between;*/
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--background-color);
+  width: 100%;
+  /* max-width: 400px; */
+}
+
+.tabSetting {
+  padding: 1rem;
+  background-color: var(--background-color);
+}
+
+.tabInner {
+  justify-content: space-between;
+  background-color: transparent;
+}
+.bookmarkName {
+  display: block;
+  margin-top: 10px;
+  /* max-width: 200px; */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* padding: 0px 15px 10px 15px; */
+}
+
+.bookmarkEditor {
+  display: flex;
+  flex-grow: 1;
+
+  flex-direction: column;
+}
+
+input {
+  /*background-color: rgb(42 42 42);*/
+  background-color: transparent;
+  /*color: #666666;*/
+  color: var(--color-text);
+
+  padding: 0.2em;
+  border-radius: 2px;
+  border: 2px solid var(--border-color);
+  outline: none;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  width: 100%;
+}
+
+.catalogEditMobile {
+  display: none;
+}
+
+.formCheckInput:checked {
+  background-color: #484747 !important;
+  border-color: #484747 !important;
+}
+
+.dropzone {
+  border: 2px dashed var(--color-text);
+  min-height: 100px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dropzone.dzDragHover {
+  background-color: var(--color-text);
+}
+
+.formlementIsEmpty {
+  border: 1px solid red !important;
+}
+
+@media (max-width: 880px) {
+  .navTabsVertical {
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    overflow-y: hidden;
+    scrollbar-width: none; /* Встановлення ширини скролбара на нуль */
+    -ms-overflow-style: none; /* Відключення стандартного стилю скролбара для Edge та IE */
+
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .navTabsVertical::-webkit-scrollbar {
+    display: none; /* Приховування скролбара для WebKit браузерів */
+  }
+
+  .tabsContainer {
+    max-width: 100%;
+  }
+
+  .tabInner {
+    padding: 0.25rem;
+    flex-grow: 1;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    padding: 0.5rem;
+    flex-grow: 1;
+  }
+
+  .catalogEdit {
+    display: none;
+  }
+
+  .catalogEditMobile {
+    display: block;
+  }
+}
