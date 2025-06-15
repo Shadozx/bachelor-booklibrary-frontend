@@ -33,7 +33,7 @@
 
 ## Взаємодія з бекендом
 
-Frontend взаємодіє з проєктом [`bachelor-booklibrary-backend`](https://github.com/yourusername/bachelor-booklibrary-backend) через REST API. Для аутентифікації використовується JWT, який зберігається на клієнті та передається в заголовках запитів.
+Frontend взаємодіє з проєктом [`bachelor-booklibrary-backend`](https://github.com/Shadozx/bachelor-booklibrary-backend) через REST API. Для аутентифікації використовується JWT, який зберігається на клієнті та передається в заголовках запитів.
 
 ## Основний функціонал
 
