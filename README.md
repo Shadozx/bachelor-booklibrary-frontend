@@ -57,5 +57,5 @@ Frontend взаємодіє з проєктом [`bachelor-booklibrary-backend`]
 
 ## Швидкий старт. Клонування репозиторію
 ```bash
-git clone https://github.com/yourusername/bachelor-booklibrary-frontend.git
+git clone https://github.com/Shadozx/bachelor-booklibrary-frontend.git
 cd bachelor-booklibrary-frontend
